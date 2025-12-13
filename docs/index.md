@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Mind the Sensors"
 ---
 
@@ -29,7 +29,7 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 ## 📑 **Slides**
 
 - 📄 [**Midterm Presentation Slides**]({{ site.baseurl }}/assets/Project11_Midterm_Presentations.pdf)
-- 📄 [**Final Presentation Slides**]({{ site.baseurl }}/assets/Project11_FinalPresentations.pdf)
+- 📄 [**Final Presentation Slides**]({{ site.baseurl }}/assets/Project11_Final_Presentations.pdf)
 
 ---
 
