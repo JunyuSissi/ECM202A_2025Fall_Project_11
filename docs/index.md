@@ -9,7 +9,7 @@ title: "Mind the Sensors"
 
 *A concise, descriptive title for your project.*
 
-![Project Banner](./assets/img/banner-placeholder.png)  
+![Project Banner]({{ site.baseurl }}/assets/img/banner-placeholder.png)  
 <sub>*(Optional: Replace with a conceptual figure or meaningful image.)*</sub>
 ---
 
@@ -32,8 +32,7 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 ## 📑 **Slides**
 
 - 📄 [**Midterm Presentation Slides**]({{ site.baseurl }}/assets/Project11_Midterm_Presentations.pdf)
-- 📄 [**Final Presentation Slides**](assets/Project11_FinalPresentations.pdf)
-- 💾 [**Source Code Repository**](https://github.com/JunyuSissi/ECM202A_2025Fall_Project_11)
+- 📄 [**Final Presentation Slides**]({{ site.baseurl }}assets/Project11_FinalPresentations.pdf)
 
 ---
 
@@ -79,7 +78,7 @@ The system is built on an embedded platform using a Raspberry Pi, which acts as 
 #### **3.1.1 Voice-Recognition Architecture**
 This flow focuses on identifying users and capturing consent primarily through audio channels, ideal for hands-free interaction.
 
-![Voice Recognition System Design](./assets/img/Voice_Recognition_based_system_design.png)
+![Voice Recognition System Design]({{ site.baseurl }}/assets/img/Voice_Recognition_based_system_design.png)
 
 
 *Figure 2: Architecture for the voice-based interaction flow. The Microphone captures verbal IDs, processed by the Voice Recognition module, and validated against the Database.*
@@ -87,7 +86,7 @@ This flow focuses on identifying users and capturing consent primarily through a
 #### **3.1.2 Facial-Recognition Architecture**
 This flow uses a multimodal approach, combining visual identification with verbal consent for higher accuracy.
 
-![Facial Recognition System Design](./assets/img/Facial_Recognition_based_system_design.png)
+![Facial Recognition System Design]({{ site.baseurl }}/assets/img/Facial_Recognition_based_system_design.png)
 
 
 *Figure 3: Architecture for the camera and voice hybrid flow. The Camera triggers the identification, while the NLP module processes verbal consent.*
