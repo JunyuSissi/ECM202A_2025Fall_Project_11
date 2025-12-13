@@ -29,11 +29,11 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 
 ---
 
-## 📑 **Deliverables**
+## 📑 **Slides**
 
-- 📄 [**Midterm Presentation Slides**](./assets/Project11_Midterm_Presentations.pdf)
-- 📄 [**Final Presentation Slides**](./assets/Project11_FinalPresentations.pdf)
-- 💾 [**Source Code Repository**](https://github.com/your-repo-link) *(Add your repo link here)*
+- 📄 [**Midterm Presentation Slides**](assets/Project11_Midterm_Presentations.pdf)
+- 📄 [**Final Presentation Slides**](assets/Project11_FinalPresentations.pdf)
+- 💾 [**Source Code Repository**](https://github.com/JunyuSissi/ECM202A_2025Fall_Project_11)
 
 ---
 
