@@ -8,9 +8,6 @@ title: "Mind the Sensors"
 *A multi-modal system enabling transparent, interactive user consent for data collection in smart spaces.*
 
 *A concise, descriptive title for your project.*
-
-![Project Banner]({{ site.baseurl }}/assets/img/banner-placeholder.png)  
-<sub>*(Optional: Replace with a conceptual figure or meaningful image.)*</sub>
 ---
 
 ## 👥 **Team**
@@ -32,7 +29,7 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 ## 📑 **Slides**
 
 - 📄 [**Midterm Presentation Slides**]({{ site.baseurl }}/assets/Project11_Midterm_Presentations.pdf)
-- 📄 [**Final Presentation Slides**]({{ site.baseurl }}assets/Project11_FinalPresentations.pdf)
+- 📄 [**Final Presentation Slides**]({{ site.baseurl }}/assets/Project11_FinalPresentations.pdf)
 
 ---
 
