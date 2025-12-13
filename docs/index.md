@@ -30,7 +30,8 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 
 ## 📑 **Slides**
 
-- [Final Presentation Slides](./reports/Project11_FinalPresentations.pdf)
+- [Midterm Presentation Slides](./assets/Project11_Midterm_Presentations.pdf)
+- [Final Presentation Slides](./assets/Project11_FinalPresentations.pdf)
 
 ---
 
