@@ -79,13 +79,13 @@ The system is built on an embedded platform using a Raspberry Pi, which acts as 
 #### **3.1.1 Voice-Recognition Architecture**
 This flow focuses on identifying users and capturing consent primarily through audio channels, ideal for hands-free interaction.
 
-![Voice Recognition System Design](./assets/img/Voice-Recognition based system design.png)
+![Voice Recognition System Design](./assets/img/Voice_Recognition_based_system_design.png)
 *Figure 2: Architecture for the voice-based interaction flow. The Microphone captures verbal IDs, processed by the Voice Recognition module, and validated against the Database.*
 
 #### **3.1.2 Facial-Recognition Architecture**
 This flow uses a multimodal approach, combining visual identification with verbal consent for higher accuracy.
 
-![Facial Recognition System Design](./assets/img/Facial-Recognition based system design.png)
+![Facial Recognition System Design](./assets/img/Facial_Recognition_based_system_design.png)
 *Figure 3: Architecture for the camera and voice hybrid flow. The Camera triggers the identification, while the NLP module processes verbal consent.*
 
 ### **3.2 Data Pipeline & Database**
