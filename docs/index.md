@@ -10,41 +10,53 @@ title: "Mind the Sensors"
 *A concise, descriptive title for your project.*
 ---
 
-## 👥 **Team**
+## **Team**
 
-- **Junyu Liu**
-- **Maoqi Xu**
-- **Jacob Yang**
+- [**Junyu Liu**](https://github.com/JunyuSissi)
+- [**Maoqi Xu**](https://github.com/GoBackwards)
+- [**Jacob Yang**](https://github.com/V3rdant-byte)
 - **Mentor:** Brian Wang
 - **Professor:** Prof. Mani Srivastava
 
 ---
 
-## 📝 **Abstract**
+## **Abstract**
 
 Smart environments often suffer from a lack of transparency, leaving visitors feeling watched rather than served. To address this, we developed "Mind the Sensors," an interactive system that allows users to easily grant or deny data collection consent via natural modalities like voice, camera, and web interfaces. Our approach utilizes a Raspberry Pi-based embedded platform running local facial and voice recognition pipelines to ensure privacy. Key results demonstrate high user trust (4.5/5 average) and ease of use across scenarios, with keyword spotting achieving near 100% accuracy. This project provides building owners and developers with reusable patterns to deploy privacy-respecting smart spaces.
 
 ---
 
-## 📑 **Slides**
+## **Slides**
 
-- 📄 [**Midterm Presentation Slides**]({{ site.baseurl }}/assets/Project11_Midterm_Presentations.pdf)
-- 📄 [**Final Presentation Slides**]({{ site.baseurl }}/assets/Project11_Final_Presentations.pdf)
+- [**Midterm Presentation Slides**]({{ site.baseurl }}/assets/Project11_Midterm_Presentations.pdf)
+- [**Final Presentation Slides**]({{ site.baseurl }}/assets/Project11_Final_Presentations.pdf)
 
 ---
 
 # **1. Introduction**
 
-As smart environments become ubiquitous, the need for clear, accessible privacy controls becomes critical. This project introduces a system that empowers users to control their digital footprint in physical spaces.
+As smart environments become ubiquitous, the need for clear, accessible privacy controls becomes critical. Previous researches such as Peekaboo have focused on building a local privacy-sensitve system to preprocess data before uploading to the cloud server, but such systems lack a unifed or standardized way to request and manage privacy permissions from the users at the point of data entry.
+
+This project introduces a system that empowers users to control their digital footprint in physical spaces both verbally and through the website interface.
 
 ### **1.1 Motivation & Context**
 Current smart space implementations often fail to inform visitors, leading to a feeling of being "watched" or "surveilled." Furthermore, standard consent mechanisms (like website pop-ups) do not translate well to physical spaces. Visitors with disabilities or those without electronic devices at hand are often excluded from digital consent flows.
 
-### **1.2 Goals**
 The primary objective is to let people walking into a smart room easily say "yes" or "no" to what sensors collect about them. We aim to:
 1.  **Simplify Consent:** Create prompts that work with available modalities—phone, camera, or voice.
 2.  **Ensure Persistence:** Ensure the space remembers a user's choice to avoid repetitive prompts.
 3.  **Preserve Privacy:** Process biometric data locally without cloud dependency.
+
+### **1.2 State of the Art & Its Limitations**
+
+### **1.3 Novelty & Rationale**
+
+### **1.4 Potential Impact**
+
+### **1.5 Challenges**
+
+
+### **1.6 Metrics of Success**
 
 ---
 
@@ -129,7 +141,7 @@ We tested the system with 20 trial interactions.
 
 ---
 
-# **5. Discussion & Future Work**
+# **5. Discussion & Conclusions**
 
 Our system successfully demonstrated that complex privacy consent flows can be simplified into natural interactions.
 
@@ -141,16 +153,21 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 
 ---
 
-# **6. Reproducibility**
+# **6. References**
+
+---
+
+# **7. Supplementary Material**
 
 To encourage further development, we have documented our software stack and datasets.
 
-### **Software Stack**
+### **7.a. Datasets**
+* **User Encodings:** Collected locally during the demo phase. Stored as 128-d (face) and 256-d (voice) vectors.
+
+### **7.b. Software**
 * **Facial Recognition:** `face_recognition`, `opencv-python`
 * **Voice Processing:** `sounddevice`, `vosk`, `resemblyzer`
 * **Backend:** `Flask`, `SQLite3`
 * **Compliance:** `Iubenda` API
 
-### **Datasets**
-* **User Encodings:** Collected locally during the demo phase. Stored as 128-d (face) and 256-d (voice) vectors.
-* *(Link to your GitHub repo's "data" folder or a sample anonymized database schema)*
+
