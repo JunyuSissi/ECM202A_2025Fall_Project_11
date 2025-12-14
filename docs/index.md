@@ -80,11 +80,11 @@ Our work builds upon established research in ubiquitous computing, privacy-by-de
 * **Schaub et al. (2015)** proposed a design space for effective privacy notices, arguing that notices must be context-aware and delivered at the right time. Our system implements this by triggering consent requests *only* upon entry or identification.
 
 ### **2.2 Biometric Identification**
-* **Face Recognition:** We utilize **dlib**'s ResNet models, which achieve 99.38% accuracy on the LFW benchmark. Unlike cloud-based solutions (e.g., AWS Rekognition), our implementation focuses on **edge-based** inference using `face_recognition` and `opencv` to keep data local.
-* **Speaker Verification:** We employ **Resemblyzer**, derived from Google's **GE2E (Generalized End-to-End Loss)** model. This allows for real-time voice embedding generation on low-power devices, a significant improvement over older GMM-UBM models.
+* **Face Recognition:** We utilize **dlib**'s ResNet models, which achieve 99.38% accuracy on the LFW benchmark. Unlike cloud-based solutions (e.g., AWS Rekognition), our implementation focuses on **edge-based** inference using `face_recognition` [4] and `opencv` [8] to keep data local.
+* **Speaker Verification:** We employ **Resemblyzer** [5], derived from Google's **GE2E (Generalized End-to-End Loss)** model. This allows for real-time voice embedding generation on low-power devices, a significant improvement over older GMM-UBM models.
 
 ### **2.3 Legal Compliance Tools**
-* **Iubenda:** While mostly used for web compliance, we integrate **iubenda**'s API to manage "Cookie Solutions" and legal policy generation, bridging the gap between physical sensor data and GDPR/CCPA digital compliance requirements.
+* **Iubenda:** While mostly used for web compliance, we integrate **iubenda**'s API to manage "Cookie Solutions" and legal policy generation [1], bridging the gap between physical sensor data and GDPR/CCPA digital compliance requirements.
 
 ---
 
@@ -93,7 +93,7 @@ Our work builds upon established research in ubiquitous computing, privacy-by-de
 We designed a modular system centered around a Raspberry Pi that orchestrates sensor input, database management, and user feedback.
 
 ### **3.1 System Architecture**
-The system is built on an embedded platform using a Raspberry Pi, which acts as the central coordinator. To accommodate different user needs, we designed two distinct architectural flows.
+The system is built on an embedded platform using a Raspberry Pi, which acts as the central coordinator. It runs a Flask-based web server [6] to handle local data processing and user interface rendering. To accommodate different user needs, we designed two distinct architectural flows.
 
 #### **3.1.1 Voice-Recognition Architecture**
 This flow focuses on identifying users and capturing consent primarily through audio channels, ideal for hands-free interaction.
@@ -112,14 +112,14 @@ This flow uses a multimodal approach, combining visual identification with verba
 *Figure 3: Architecture for the camera and voice hybrid flow. The Camera triggers the identification, while the NLP module processes verbal consent.*
 
 ### **3.2 Data Pipeline & Database**
-We use a lightweight **SQLite** database to store identity and consent status locally. This ensures no sensitive biometric data leaves the device.
+We use a lightweight **SQLite** database [3] to store identity and consent status locally. This ensures no sensitive biometric data leaves the device.
 * **Table `users`:** Stores `user_id`, `name`, and `permission` (0=first seen, 1=consent, 2=no consent).
 * **Table `user_faces`:** Stores 128-d face embeddings as BLOBs.
 * **Table `user_voices`:** Stores voice recognition embeddings.
 
 ### **3.3 Algorithmic Details**
 * **Facial Logic:** Input via `Picamera2` is downscaled 4x for speed. We calculate L2 distance against SQLite records with a strict match threshold of **0.38**. To handle auto-enrollment, we use **Temporal Clustering**: buffering "unknown" encodings and requiring 5 consistent frames within a 3-second window.
-* **Voice Logic:** Using **Vosk** for wake-word detection ("Apple") and **Resemblyzer** for biometric verification. Matching uses Cosine Similarity with a threshold of **0.75**.
+* **Voice Logic:** Using **Vosk** [7] for wake-word detection ("Apple") and **Resemblyzer** [5] for biometric verification. Matching uses Cosine Similarity with a threshold of **0.75**.
 
 ---
 
@@ -168,6 +168,18 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 [1] Iubenda, "GDPR Cookie Consent Cheatsheet," *Iubenda Help*, [Online]. Available: [https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet](https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet).
 
 [2] H. Jin, G. Liu, D. Hwang, S. Kumar, Y. Agarwal, and J. I. Hong, "Peekaboo: A hub-based approach to enable transparency in data processing within smart homes," in *2022 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2022, pp. 303-320. [Online]. Available: [https://arxiv.org/pdf/2204.04540](https://arxiv.org/pdf/2204.04540).
+
+[3] D. R. Hipp, "SQLite," *SQLite Documentation*, 2025. [Online]. Available: [https://www.sqlite.org/index.html](https://www.sqlite.org/index.html).
+
+[4] A. Geitgey, "Face Recognition," *GitHub Repository*, 2018. [Online]. Available: [https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition).
+
+[5] CorentinJ, "Resemblyzer: A Deep Learning Voice Encoder," *GitHub Repository*, 2019. [Online]. Available: [https://github.com/resemble-ai/Resemblyzer](https://github.com/resemble-ai/Resemblyzer).
+
+[6] Pallets Projects, "Flask: User's Guide," *Flask Documentation*, 2024. [Online]. Available: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/).
+
+[7] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: https://alphacephei.com/vosk/
+
+[8] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: https://opencv.org/
 
 ---
 
