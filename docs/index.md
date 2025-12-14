@@ -34,4 +34,4 @@ Smart environments often suffer from a lack of transparency, leaving visitors fe
 ---
 ## **Reports**
 
-- [**Final Report**]({{ site.baseurl }}/final_report.md)
+- [**Final Report**]({{ site.baseurl }}/final_report.html)
