@@ -168,6 +168,7 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 [1] Iubenda, "GDPR Cookie Consent Cheatsheet," *Iubenda Help*, [Online]. Available: [https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet](https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet).
 
 [2] H. Jin, G. Liu, D. Hwang, S. Kumar, Y. Agarwal, and J. I. Hong, "Peekaboo: A hub-based approach to enable transparency in data processing within smart homes," in *2022 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2022, pp. 303-320. [Online]. Available: [https://arxiv.org/pdf/2204.04540](https://arxiv.org/pdf/2204.04540).
+
 ---
 
 # **7. Supplementary Material**
