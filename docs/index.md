@@ -177,9 +177,9 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 
 [6] Pallets Projects, "Flask: User's Guide," *Flask Documentation*, 2024. [Online]. Available: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/).
 
-[7] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: https://alphacephei.com/vosk/
+[7] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: [https://alphacephei.com/vosk/).
 
-[8] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: https://opencv.org/
+[8] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: [https://opencv.org/).
 
 ---
 
