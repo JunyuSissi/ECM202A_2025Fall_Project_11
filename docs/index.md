@@ -165,21 +165,21 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 ---
 
 # **6. References**
-[1] Iubenda, "GDPR Cookie Consent Cheatsheet," *Iubenda Help*, [Online]. Available: [https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet](https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet).
+[1] Iubenda, "GDPR Cookie Consent Cheatsheet," *Iubenda Help*, [Online]. Available: [link](https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet).
 
-[2] H. Jin, G. Liu, D. Hwang, S. Kumar, Y. Agarwal, and J. I. Hong, "Peekaboo: A hub-based approach to enable transparency in data processing within smart homes," in *2022 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2022, pp. 303-320. [Online]. Available: [https://arxiv.org/pdf/2204.04540](https://arxiv.org/pdf/2204.04540).
+[2] H. Jin, G. Liu, D. Hwang, S. Kumar, Y. Agarwal, and J. I. Hong, "Peekaboo: A hub-based approach to enable transparency in data processing within smart homes," in *2022 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2022, pp. 303-320. [Online]. Available: [link](https://arxiv.org/pdf/2204.04540).
 
-[3] D. R. Hipp, "SQLite," *SQLite Documentation*, 2025. [Online]. Available: [https://www.sqlite.org/index.html](https://www.sqlite.org/index.html).
+[3] D. R. Hipp, "SQLite," *SQLite Documentation*, 2025. [Online]. Available: [link](https://www.sqlite.org/index.html).
 
-[4] A. Geitgey, "Face Recognition," *GitHub Repository*, 2018. [Online]. Available: [https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition).
+[4] A. Geitgey, "Face Recognition," *GitHub Repository*, 2018. [Online]. Available: [link](https://github.com/ageitgey/face_recognition).
 
-[5] CorentinJ, "Resemblyzer: A Deep Learning Voice Encoder," *GitHub Repository*, 2019. [Online]. Available: [https://github.com/resemble-ai/Resemblyzer](https://github.com/resemble-ai/Resemblyzer).
+[5] CorentinJ, "Resemblyzer: A Deep Learning Voice Encoder," *GitHub Repository*, 2019. [Online]. Available: [link](https://github.com/resemble-ai/Resemblyzer).
 
-[6] Pallets Projects, "Flask: User's Guide," *Flask Documentation*, 2024. [Online]. Available: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/).
+[6] Pallets Projects, "Flask: User's Guide," *Flask Documentation*, 2024. [Online]. Available: [link](https://flask.palletsprojects.com/).
 
-[7] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: [https://alphacephei.com/vosk/).
+[7] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: [link](https://alphacephei.com/vosk/).
 
-[8] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: [https://opencv.org/).
+[8] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: [link](https://opencv.org/).
 
 ---
 
