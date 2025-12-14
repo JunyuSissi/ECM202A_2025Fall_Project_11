@@ -48,11 +48,22 @@ The primary objective is to let people walking into a smart room easily say "yes
 3.  **Preserve Privacy:** Process biometric data locally without cloud dependency.
 
 ### **1.2 State of the Art & Its Limitations**
+Existing research has attempted to bridge the gap between IoT data collection and user privacy. Notable works include **Peekaboo** [2], a hub-based approach that pre-processes data to strip sensitive information before it reaches the cloud.
 
+* **Limitation of Current Systems:** While systems like Peekaboo focus on *sanitization* (cleaning data after collection but before upload), they often lack a unified, standardized interface for *acquisition* (asking the user for permission in the first place).
+* **The Gap:** There is currently no widely adopted framework for "interactive consent" that works across different physical modalities (voice, vision, web) simultaneously. Most systems rely solely on a companion app, which excludes users who do not have their phones active or installed.
 ### **1.3 Novelty & Rationale**
+Our system introduces a novel **multi-modal consent framework**. Unlike previous works that rely on a single channel (e.g., a mobile app), "Mind the Sensors" offers four concurrent entry setups:
+* Camera-Web based
+* Camera-Voice based
+* Voice-Only based
+* Voice-Website based
 
+This flexibility ensures inclusivity and robust interaction regardless of the user's hardware status. Additionally, we integrate real-world legal compliance tools (**iubenda**) directly into the IoT workflow, bridging the gap between physical sensors and digital privacy laws (GDPR/CCPA)[1].
 ### **1.4 Potential Impact**
-
+* **For Visitors:** Users feel informed and in control rather than passively monitored.
+* **For Building Owners:** Provides a cleaner, trusted method to operate smart spaces that respect privacy regulations.
+* **For Developers:** Offers reusable design patterns for adding consent mechanisms to physical spaces, extending beyond traditional website cookies.
 ### **1.5 Challenges**
 
 
@@ -154,7 +165,9 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 ---
 
 # **6. References**
+[1] Iubenda, "GDPR Cookie Consent Cheatsheet," *Iubenda Help*, [Online]. Available: [https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet](https://www.iubenda.com/en/help/23672-gdpr-cookie-consent-cheatsheet).
 
+[2] H. Jin, G. Liu, D. Hwang, S. Kumar, Y. Agarwal, and J. I. Hong, "Peekaboo: A hub-based approach to enable transparency in data processing within smart homes," in *2022 IEEE Symposium on Security and Privacy (SP)*, San Francisco, CA, USA, 2022, pp. 303-320. [Online]. Available: [https://arxiv.org/pdf/2204.04540](https://arxiv.org/pdf/2204.04540).
 ---
 
 # **7. Supplementary Material**
