@@ -4,8 +4,8 @@ show_downloads: true
 # google_analytics:[Your Google Analytics tracking ID]
 
 # Name of website
-title: "EC M202A Project – Mind the Sensors: Interactive Consent for Smart Environments"
-description: "Course project website for EC M202A / CS M213A"
+title: "ECM202A Project – Mind the Sensors: Interactive Consent for Smart Environments"
+description: "Course project website for ECM202A / CSM213A"
 # For user pages, url should be "https://username.github.io" and baseurl: ""
 # For project pages, url: "https://username.github.io" and baseurl: "/repo-name"
 url: "https://junyusissi.github.io"        # replace UCLA-ECEM202A with your github id

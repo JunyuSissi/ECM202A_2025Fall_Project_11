@@ -32,7 +32,7 @@ Prior research in ubiquitous computing emphasizes the importance of transparency
 
 More recent work such as Peekaboo focuses on privacy-by-design by preprocessing sensor data locally to reduce cloud exposure [[1](#6-references)]. While effective at minimizing downstream privacy risks, these approaches do not provide explicit mechanisms for obtaining user consent at the moment data is captured. Similarly, stakeholder-focused access-control systems such as TEO [[3](#6-references)] address power asymmetries in shared spaces through ephemeral ownership models, but introduce deployment complexity and do not prioritize lightweight, user-facing consent interactions.
 
-In contrast, on the web, cookie consent banners have become a standardized mechanism for providing notice, collecting user consent, and offering optional granular privacy controls under regulations such as GDPR and CCPA [[5](#6-references)]. Despite their limitations, cookie banners establish a widely understood mental model for privacy decision-making. No equivalent, standardized interaction exists for physical smart environments, leaving a gap between users’ expectations formed online and consent mechanisms available in the real world.
+In contrast, on the web, cookie consent banners have become a standardized mechanism for providing notice, collecting user consent, and offering optional granular privacy controls under regulations such as GDPR and CCPA [[12](#6-references)]. Despite their limitations, cookie banners establish a widely understood mental model for privacy decision-making. No equivalent, standardized interaction exists for physical smart environments, leaving a gap between users’ expectations formed online and consent mechanisms available in the real world.
 
 ### **1.3 Novelty & Rationale**
 The novelty of Mind the Sensors lies in translating the web-based cookie consent paradigm into physical smart environments through multimodal, in-situ interaction. Inspired by cookie consent banners, our system provides:
@@ -70,6 +70,7 @@ From a usability perspective, success is measured through user-reported ratings 
 From a technical perspective, success is measured using biometric performance metrics, including false match rate (FMR), false non-match rate (FNMR), and keyword spotting accuracy. Near-perfect keyword detection and zero false non-matches in facial recognition demonstrate reliable interaction triggering, while observed false matches highlight areas for future improvement rather than system failure.
 
 Additionally, system responsiveness and local-only processing serve as implicit success metrics, validating that interactive consent can be achieved on low-power embedded hardware without cloud dependency.
+
 ---
 
 # **2. Related Work**
@@ -192,6 +193,8 @@ Our system successfully demonstrated that complex privacy consent flows can be s
 [10] Alpha Cephei, "Vosk Offline Speech Recognition API," [Online]. Available: [link](https://alphacephei.com/vosk/).
 
 [11] OpenCV Team, "OpenCV (Open Source Computer Vision Library)," [Online]. Available: [link](https://opencv.org/).
+
+[12] European Data Protection Board. Guidelines on consent and cookies under GDPR.
 
 ---
 
